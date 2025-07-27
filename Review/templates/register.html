@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация аккаунта!</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Регистрация</h1>
+    <form method="post" action="/register">
+      <input type="text" name="username" placeholder="Логин (3–20 символов)" required minlength="3" maxlength="20">
+      <input type="password" name="password" placeholder="Пароль (6–50 символов)" required minlength="6" maxlength="50">
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+    <p>Уже есть аккаунт? <a href="/">Войти</a></p>
+  </div>
+</body>
+</html>

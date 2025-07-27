@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Вход на платформу!</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Вход</h1>
+    <form method="post" action="/login">
+      <input type="text" name="username" placeholder="Логин" required minlength="3" maxlength="20">
+      <input type="password" name="password" placeholder="Пароль" required minlength="6" maxlength="50">
+      <button type="submit">Войти</button>
+    </form>
+    <p>Нет аккаунта? <a href="/register">Зарегистрироваться</a></p>
+  </div>
+ <script src="/static/script.js" defer></script>
+</body>
+</html>
